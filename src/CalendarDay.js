@@ -309,13 +309,15 @@ class CalendarDay extends Component {
       .map((dot, index) => {
         const selectedColor = dot.selectedColor || dot.selectedDotColor; // selectedDotColor deprecated
         const backgroundColor = this.state.selected && selectedColor ? selectedColor : dot.color;
+        const customDotStyle = dot.customDotStyle ? dot.customDotStyle : {};
         return (
           <View
             key={dot.key || (formattedDate + index)}
             style={[
               baseDotStyle,
               { backgroundColor },
-              markedDatesStyle
+              markedDatesStyle,
+              customDotStyle,
             ]}
           />
         );
