@@ -71,7 +71,9 @@ export default StyleSheet.create({
   // CALENDAR DOTS
   dotsContainer: {
     flexDirection: 'row',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
   },
   visibleDot: {
     opacity: 1,
