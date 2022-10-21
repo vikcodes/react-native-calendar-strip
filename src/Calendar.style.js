@@ -74,6 +74,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     flexWrap: 'wrap',
     justifyContent: 'center',
+    marginTop: 2,
   },
   visibleDot: {
     opacity: 1,
